@@ -171,6 +171,13 @@ def replace_middle(input_list):
 
     """
 
+    input_list[2] = 42
+    input_list[3] = 37
+
+    i = 4
+    while i < len(input_list)-2:
+        del input_list[i]
+
     pass
 
 
