@@ -213,6 +213,10 @@ def delete_middle(input_list):
 
     """
 
+    i = 2
+    while i < len(input_list)-2:
+        del input_list[i]
+
     pass
 
 
