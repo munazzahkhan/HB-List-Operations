@@ -194,7 +194,13 @@ def custom_reverse(input_list):
 
     """
 
-    pass
+    temp_list = input_list[:]
+    i = -1
+    j = 0
+    for item in input_list:
+        input_list[i] = temp_list[j]
+        i -= 1
+        j += 1
 
 
 def custom_contains(input_list, value):
