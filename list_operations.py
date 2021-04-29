@@ -9,7 +9,7 @@ def head(input_list):
       >>> head(['Jan', 'Feb', 'Mar'])
       'Jan'
     """
-
+    
     return input_list[0]
 
 
@@ -131,7 +131,7 @@ def replace_head(input_list):
     True
 
     """
-
+    
     input_list[0] = 42
 
     pass
@@ -169,14 +169,13 @@ def replace_middle(input_list):
     >>> multiples == [0, 3, 42, 37, 24, 27]
     True
 
+    List slicing assignment (some_list[start:end] = another_list)
+
+
     """
 
-    input_list[2] = 42
-    input_list[3] = 37
-
-    i = 4
-    while i < len(input_list)-2:
-        del input_list[i]
+    new_list = [42, 37]
+    input_list[2:-2] = new_list            
 
     pass
 
@@ -193,8 +192,7 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    del input_list[2]
-    del input_list[5]
+    del input_list[2], input_list[5]
 
     pass
 
@@ -213,10 +211,8 @@ def delete_middle(input_list):
 
     """
 
-    i = 2
-    while i < len(input_list)-2:
-        del input_list[i]
-
+    del input_list[2:-2]
+    
     pass
 
 
