@@ -127,7 +127,10 @@ def custom_pop(input_list):
 
     """
 
-    return None
+    del_item = input_list[-1]
+    del input_list[-1]
+
+    return del_item
 
 
 def custom_index(input_list, value):
