@@ -15,8 +15,11 @@ def custom_len(input_list):
         8
 
     """
+    length = 0
+    for items in input_list:
+        length += 1
 
-    return 0
+    return length
 
 
 # For the next four exercises, you'll need to be clever and think about ways
