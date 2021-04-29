@@ -132,6 +132,8 @@ def replace_head(input_list):
 
     """
 
+    input_list[0] = 42
+
     pass
 
 
